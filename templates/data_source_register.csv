@@ -1,0 +1,2 @@
+source,url,licence_or_terms,update_frequency,coverage,known_limitations,last_checked
+Frankfurter (ECB reference rates),https://frankfurter.dev,check site terms before redistribution,working days ~16:00 CET,verify per currency with `make quality`,not for transactions; INR start date to be confirmed,

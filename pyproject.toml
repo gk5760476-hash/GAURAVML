@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fxlab"
+version = "1.0.0"
+description = "Exchange-rate analytics and forecasting-evaluation platform (INR pairs)"
+requires-python = ">=3.10"
+dependencies = [
+  "pandas>=2.1", "numpy>=1.26", "scikit-learn>=1.4", "scipy>=1.11",
+  "requests>=2.31", "streamlit>=1.40,<2", "plotly>=5.20",
+]
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
